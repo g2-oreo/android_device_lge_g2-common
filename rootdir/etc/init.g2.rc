@@ -305,6 +305,10 @@ on boot
     write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 53059
     write /sys/module/lowmemorykiller/parameters/debug_level 0
 
+    # Wifi firmware reload path
+    chown wifi wifi /sys/module/bcmdhd/parameters/firmware_path
+    chown wifi wifi /sys/module/wlan/parameters/fwpath
+
 on charger
 	# Booting modem
     wait /dev/block/platform/msm_sdcc.1/by-name/modem
