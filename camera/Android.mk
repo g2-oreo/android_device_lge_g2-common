@@ -6,12 +6,19 @@ LOCAL_SRC_FILES := \
 
 LOCAL_STATIC_LIBRARIES := libbase libarect
 LOCAL_SHARED_LIBRARIES := \
-    libhardware liblog libcamera_client libgui libutils \
+    libhardware \
+    liblog \
+    libcamera_client \
+    libgui \
+    libhidltransport \
+    libsensor \
+    libutils \
     android.hidl.token@1.0-utils \
 
 LOCAL_C_INCLUDES += \
     system/media/camera/include
 
+LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
 LOCAL_MODULE := camera.$(TARGET_BOARD_PLATFORM)
 LOCAL_MODULE_TAGS := optional
