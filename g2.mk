@@ -208,7 +208,8 @@ PRODUCT_PACKAGES += \
 # Qualcomm
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
-    libxml2
+    libxml2 \
+    rild_socket
 
 # Recovery
 PRODUCT_PACKAGES += \
