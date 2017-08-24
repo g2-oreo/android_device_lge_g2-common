@@ -63,6 +63,8 @@ $(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio@2.0-impl \
+    android.hardware.audio.effect@2.0-impl \
     audio.a2dp.default \
     audio.primary.msm8974 \
     audio.r_submix.default \
@@ -81,7 +83,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    hwaddrs
+    hwaddrs \
+    android.hardware.bluetooth@1.0-impl
 
 PRODUCT_PROPERTY_OVERRIDES += \
     qcom.bluetooth.soc=rome
@@ -105,6 +108,10 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@2.0-impl \
+    android.hardware.graphics.mapper@2.0-impl \
+    android.hardware.graphics.composer@2.1-impl \
+    android.hardware.graphics.memtrack@1.0-impl \
     copybit.msm8974 \
     gralloc.msm8974 \
     hwcomposer.msm8974 \
@@ -112,6 +119,7 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl \
     gps.msm8974
 
 PRODUCT_COPY_FILES += \
@@ -146,6 +154,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-impl \
     lights.msm8974
 
 # OMX
@@ -172,6 +181,7 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.0-impl \
     Tag \
     com.android.nfc_extras
 
@@ -181,6 +191,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
     power.msm8974
 
 # Qualcomm
@@ -200,6 +211,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_common.conf:system/etc/sensor_def_common.conf
 
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
@@ -208,6 +222,10 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
 #    OneplusDoze
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.0-impl
+
 # Touchscreen
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
@@ -215,6 +233,7 @@ PRODUCT_COPY_FILES += \
 
 # Wifi
 PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
     libwpa_client \
     hostapd \
     wpa_supplicant \
