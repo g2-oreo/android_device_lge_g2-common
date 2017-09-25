@@ -81,7 +81,9 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    hwaddrs
+    hwaddrs \
+    libbt-vendor \
+    android.hardware.bluetooth@1.0-impl
 
 PRODUCT_PROPERTY_OVERRIDES += \
     qcom.bluetooth.soc=rome
