@@ -248,7 +248,9 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     hostapd \
     wpa_supplicant \
-    wpa_supplicant.conf
+    wpa_supplicant.conf \
+    wificond \
+    wifilogd
 
 # WiFi HAL
 PRODUCT_PACKAGES += \
