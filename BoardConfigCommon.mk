@@ -165,6 +165,8 @@ WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
 WIFI_DRIVER_FW_PATH_STA     := "/system/etc/firmware/fw_bcmdhd.bin"
 WIFI_DRIVER_FW_PATH_AP      := "/system/etc/firmware/fw_bcmdhd_apsta.bin"
 
+DEVICE_MANIFEST_FILE := device/lge/g2-common/manifest.xml
+
 ifneq (,$(strip $(wildcard bootable/recovery-twrp/twrp.cpp)))
 RECOVERY_VARIANT := recovery
 endif
