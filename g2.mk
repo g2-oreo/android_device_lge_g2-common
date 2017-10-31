@@ -214,6 +214,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libril_shim
 
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sensor_def_common.conf:system/etc/sensor_def_common.conf
