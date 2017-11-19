@@ -145,7 +145,7 @@ on post-fs-data
     mkdir /data/misc/qsee 0770 system system
 
     # Make sure the default firmware is loaded
-    write /sys/module/bcmdhd/parameters/firmware_path "/system/etc/firmware/fw_bcmdhd.bin"
+    write /sys/module/bcmdhd/parameters/firmware_path "/system/vendor/firmware/fw_bcmdhd.bin"
 
     setprop vold.post_fs_data_done 1
 
