@@ -357,7 +357,7 @@ service netmgrd /system/bin/netmgrd
     user root
     group radio wakelock
 
-service qcamerasvr /system/bin/mm-qcamera-daemon
+service qcamerasvr /system/vendor/bin/mm-qcamera-daemon
     class late_start
     user camera
     group camera system inet input graphics
@@ -382,7 +382,7 @@ service sensors /system/bin/sensors.qcom
     user root
     group root wakelock
 
-service set_baseband /system/bin/set_baseband.sh
+service set_baseband /system/vendor/bin/set_baseband.sh
     class late_start
     user system
     group shell
