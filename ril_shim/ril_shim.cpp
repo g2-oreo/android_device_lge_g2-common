@@ -31,3 +31,6 @@ extern "C" int _ZN7android6Parcel13writeString16EPKtj() {
 extern "C" void RIL_register_socket() {}
 
 extern "C" void RIL_onRequestAck() {}
+
+#define MAX_SERVICE_NAME_LENGTH 6
+extern "C" char ril_service_name[MAX_SERVICE_NAME_LENGTH];
