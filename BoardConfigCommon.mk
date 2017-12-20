@@ -152,6 +152,7 @@ BOARD_GLOBAL_CFLAGS += -DBATTERY_REAL_INFO
 
 # SELinux policies
 include device/qcom/sepolicy/sepolicy.mk
+include device/qcom/sepolicy/legacy-sepolicy.mk
 
 BOARD_SEPOLICY_DIRS += \
     device/lge/g2-common/sepolicy
