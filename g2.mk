@@ -224,7 +224,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libril_shim
+    librmnetctl
 
 # Sensors
 PRODUCT_COPY_FILES += \
