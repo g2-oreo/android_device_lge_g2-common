@@ -114,8 +114,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-<<<<<<< HEAD
-=======
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -160,16 +158,6 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.wifi</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IWifi</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
->>>>>>> bcd65ee... g2: Enable binderized services for HIDL HALs
         <name>android.hardware.power</name>
         <transport arch="32">passthrough</transport>
         <version>1.0</version>
@@ -178,9 +166,15 @@
             <instance>default</instance>
         </interface>
     </hal>
-<<<<<<< HEAD
-</manifest>
-=======
+    <hal format="hidl">
+        <name>android.hardware.wifi</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IWifi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.wifi.supplicant</name>
         <transport>hwbinder</transport>
@@ -191,4 +185,3 @@
         </interface>
     </hal>
 </manifest>
->>>>>>> bcd65ee... g2: Enable binderized services for HIDL HALs
